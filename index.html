@@ -1,13 +1,15 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Sachin | Web Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sachin | Frontend Developer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Header / Navbar -->
   <header>
     <h1>Sachin</h1>
     <nav>
@@ -19,7 +21,51 @@
     </nav>
   </header>
 
-  <!-- Sections will go here -->
+  <section id="home">
+    <h2>Hi, I'm Sachin</h2>
+    <p>Frontend Web Developer | Freelancer</p>
+    <a href="#contact"><button>Hire Me</button></a>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <img src="https://via.placeholder.com/150" alt="Sachin" style="border-radius: 50%;">
+    <p>I’m a passionate frontend web developer who builds beautiful and responsive websites using HTML, CSS and JavaScript.</p>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="project-card">
+      <img src="https://via.placeholder.com/600x300" alt="Project 1">
+      <h3>Food Delivery UI</h3>
+      <p>Designed a responsive landing page for food ordering app</p>
+      <a href="#">Live Demo</a> | <a href="#">GitHub</a>
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <h2>Testimonials</h2>
+    <div class="testimonial">
+      <p>"Sachin did a great job! Highly recommended."</p>
+      <h4>- Raj Verma</h4>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form onsubmit="return handleSubmit(event)">
+      <input type="text" placeholder="Your Name" required><br>
+      <input type="email" placeholder="Your Email" required><br>
+      <textarea placeholder="Your Message" required></textarea><br>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Sachin. All Rights Reserved.</p>
+    <a href="https://github.com/Sachinthakur-006/Freelancer-Portfolio1.git"><i class="freelancer-portfolio-github"></i></a>
+    <a href="#"><i class="fab fa-linkedin">Linkedin</i></a>
+  </footer>
 
   <script src="script.js"></script>
 </body>
